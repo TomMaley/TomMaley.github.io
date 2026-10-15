@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Maley | Mechanical Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio of Thomas Maley, BEng Mechanical Engineering student at Swansea University: CAD, CFD, simulation and prototyping projects.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="brand" href="#top">Thomas Maley</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Thomas Maley</h1>
+        <p class="hero-role">BEng Mechanical Engineering, Swansea University</p>
+        <p class="hero-summary">
+          Third-year undergraduate on track for First-Class Honours in 2027. I work across 3D CAD,
+          structural and fluid simulation, finite element analysis, and turning designs into
+          tested hardware.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <span class="hero-links" id="hero-links"></span>
+        </div>
+      </div>
+      <img class="hero-logo" src="images/swansea-logo.png" alt="Swansea University" onerror="this.remove()">
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <h2>About me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Mechanical Engineering student at Swansea University with a strong interest in
+            mechanical design, engineering simulation and manufacturing. I particularly enjoy projects
+            that take an engineering problem from first concept through analysis, prototyping and
+            physical testing.
+          </p>
+          <p>
+            Across individual, group and society projects I've built experience in Autodesk Fusion 360,
+            SolidWorks, ANSYS Fluent, MATLAB, Simulink, OpenRocket and Excel, alongside finite element
+            analysis (FEA) and hands-on mechanical prototyping.
+          </p>
+        </div>
+
+        <!-- Edit these rows freely -->
+        <dl class="title-block profile">
+          <div class="tb-cell tb-wide"><dt>Degree</dt><dd>BEng Mechanical Engineering</dd></div>
+          <div class="tb-cell"><dt>University</dt><dd>Swansea University</dd></div>
+          <div class="tb-cell"><dt>Graduating</dt><dd>2027, on track for a First</dd></div>
+          <div class="tb-cell tb-wide"><dt>Societies</dt><dd>SwanSEDS rocketry</dd></div>
+          <div class="tb-cell tb-wide">
+            <dt>Software</dt>
+            <dd class="tb-tags">
+              <span>Fusion 360</span><span>SolidWorks</span><span>ANSYS Fluent</span>
+              <span>MATLAB</span><span>Simulink</span><span>OpenRocket</span><span>Excel</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS (built from projects.js) ===================== -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>In the order I worked on them, from first year onwards. Pick a piece of software to see where I used it.</p>
+      </div>
+
+      <div class="filters" id="filters" role="group" aria-label="Filter projects by software"></div>
+      <p class="filter-status" id="filter-status" aria-live="polite"></p>
+
+      <div class="timeline" id="timeline">
+        <noscript><p>Turn on JavaScript to see my projects.</p></noscript>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div>
+        <h2>Get in touch</h2>
+        <p>I'd be glad to hear about placements, graduate roles or engineering projects.</p>
+      </div>
+      <div class="contact-links" id="contact-links"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Thomas Maley, Swansea University</p>
+  </footer>
+
+  <!-- Full-screen image viewer -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-btn lb-close" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lb-figure">
+      <img alt="">
+      <figcaption class="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" type="button" aria-label="Next image">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <p class="lb-count"></p>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
